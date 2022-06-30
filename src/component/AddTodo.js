@@ -45,9 +45,9 @@ class AddTodo extends Component {
         id: this.state.id,
         task: this.state.content,
         currentDate: this.state.date,
-        dueDate: this.state.dueDate
+        dueDate: this.state.duedate
      };
-     xios({
+    Axios({
    method: "POST",
    url: "http://localhost:8080/add/item",
    data: {jsonObject},
